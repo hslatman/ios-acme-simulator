@@ -62,3 +62,4 @@ The utility will print some debug logs as well as the certificate (chain) detail
 It will also try to do another certificate request 3 seconds after the first one.
 
 The utility will not persist the ACME account key, and will thus create a new ACME account every time it's ran.
+The utility will currently continue trying to request a certificate in a loop if the request fails for some reason, until the program is stopped manually.

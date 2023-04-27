@@ -46,8 +46,8 @@ var (
 func main() {
 	flag.StringVar(&directory, "directory", "", "The URL of the ACME directory")
 	flag.StringVar(&clientIdentifier, "client-identifier", "", `The "ClientIdentifier" to use in the ACME request`)
-	flag.StringVar(&udid, "udid", "device.id1", `The (fake) Apple UDID; defaults to "device.id1"`)
-	flag.StringVar(&serial, "serial", "12345", `The (fake) Apple serial number; defaults to "12345"`)
+	flag.StringVar(&udid, "udid", "device.id1", `The (fake) Apple UDID`)
+	flag.StringVar(&serial, "serial", "12345", `The (fake) Apple serial number`)
 	flag.StringVar(&rootCert, "root", "", "Path to the root CA certificate in PEM format")
 	flag.StringVar(&intermediateCert, "intermediate", "", "Path to the intermediate CA certificate in PEM format")
 	flag.StringVar(&intermediateKey, "key", "", "Path to the intermediate CA private key")
